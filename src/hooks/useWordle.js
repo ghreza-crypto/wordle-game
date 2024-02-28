@@ -13,8 +13,8 @@ const useWordle = (solution) => {
     const addNewGuess = () => {
 
     }
-    const handleKeyUp = () => {
-
+    const handleKeyUp = ({ key }) => {
+        console.log(key)
     }
     return { turn, currentGuess, guesses, isCorrect, handleKeyUp }
 
