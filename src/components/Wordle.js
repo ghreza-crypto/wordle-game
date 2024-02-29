@@ -8,6 +8,6 @@ export default function Wordle({solution}) {
         return () => window.removeEventListener('keyup', handleKeyUp)
     }, [handleKeyUp])
     return (
-        <div>Wordle</div>
+        <div>current guess - {currentGuess}</div>
     )
 }
