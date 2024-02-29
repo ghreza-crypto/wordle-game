@@ -14,7 +14,13 @@ const useWordle = (solution) => {
 
     }
     const handleKeyUp = ({ key }) => {
-        console.log(key)
+        if (/^[A-Za-z]$/.test(key)) {
+            if (currentGuess.length < 5) {
+                setCurrentGuess((prev) => {
+                    return prev + key
+                })
+            }
+        }
     }
     return { turn, currentGuess, guesses, isCorrect, handleKeyUp }
 
