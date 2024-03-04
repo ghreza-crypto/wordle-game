@@ -26,8 +26,10 @@ const useWordle = (solution) => {
         })
         return formattedGuess
     }
-    const addNewGuess = () => {
-
+    const addNewGuess = (formattedGuess) => {
+        if (currentGuess === solution) {
+            setIsCorrect(true)
+        }
     }
     const handleKeyUp = ({ key }) => {
         if (key === 'Enter') {
@@ -44,7 +46,7 @@ const useWordle = (solution) => {
                 return
             }
             const formatted = formatGuess()
-            console.log(formatted)
+            addNewGuess(formatted)
         }
         if (key === 'Backspace') {
             setCurrentGuess((prev) => {
