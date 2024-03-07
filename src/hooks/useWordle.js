@@ -30,11 +30,18 @@ const useWordle = (solution) => {
         if (currentGuess === solution) {
             setIsCorrect(true)
         }
-        setGuesses((prevGuesses)=>{
-            let newGuesses=[...prevGuesses]
-            newGuesses[turn]=formattedGuess
+        setGuesses((prevGuesses) => {
+            let newGuesses = [...prevGuesses]
+            newGuesses[turn] = formattedGuess
             return newGuesses
         })
+        setHistory((prevHistory) => {
+            return [...prevHistory, currentGuess]
+        })
+        setTurn((prevTurn) => {
+            return prevTurn + 1
+        })
+        setCurrentGuess('')
     }
     const handleKeyUp = ({ key }) => {
         if (key === 'Enter') {
