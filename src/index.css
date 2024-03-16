@@ -32,3 +32,18 @@ h1 {
   font-size: 2.5em;
 
 }
+
+.row>div.green {
+  background: #5ac85a;
+  background-color: #5ac85a;
+}
+
+.row>div.grey {
+  background: #a1a1a1;
+  background-color: #a1a1a1;
+}
+
+.row>div.yellow {
+  background: #e2cc68;
+  background-color: #e2cc68;
+}
