@@ -4,14 +4,13 @@ import Wordle from "./components/Wordle";
 
 function App() {
   const [solution, setSolution] = useState(null)
+  const solutions = ["spade", "spade", "spade", "pools", "drive", "relax", "times", "train", "cores", "blame", "banks",
+    "phone", "bling", "coins", "hello", "pours"]
+
   useEffect(() => {
-    fetch('http://localhost:3001/solutions')
-      .then(res => res.json())
-      .then(json => {
-        const randomSolution = json[Math.floor(Math.random() * json.length)]
-        setSolution(randomSolution.word)
-      })
+    setSolution(solutions[Math.floor(Math.random() * solutions.length)])
   }, [setSolution])
+
   return (
     <div className="App">
       <h1>Wordle Game</h1>
