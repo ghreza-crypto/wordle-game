@@ -141,7 +141,7 @@ To run tests, run the following command:
 👤 **Ghulam Reza Rajabi**
 
 - GitHub: [@ghreza-crypto](github.com/ghreza-crypto)
-- LinkedIn: [LinkedIn](linkedin.com/in/ghulam-reza-rajabi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghulam-reza-rajabi)
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
