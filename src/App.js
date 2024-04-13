@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <h1>Wordle Game</h1>
+      <a href="https://github.com/ghreza-crypto/wordle-game" target="_blank">Link To Project</a>
       {solution && <Wordle solution={solution} />}
     </div>
   );
