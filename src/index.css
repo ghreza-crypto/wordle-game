@@ -13,6 +13,13 @@ h1 {
   color: #333;
 }
 
+a {
+  position: fixed;
+  right: 40px;
+  text-decoration: none;
+  color: #333;
+}
+
 .row {
   text-align: center;
   display: flex;
